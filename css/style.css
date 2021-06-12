@@ -1,0 +1,50 @@
+.animation {
+	width: 100%;
+	height: 900px;
+	background-color: lightblue;
+	margin: 0 auto;
+	border-style: solid;
+	position: relative;
+}
+.park {
+	width: 100%;
+	height: 900px;
+	z-index: 1;
+	position: absolute;
+}
+.bee {
+	width: 150px;
+	height: 100px;
+	z-index: 2;
+	position: absolute;
+	transform: translate(0px,500px);
+	animation: beeanimation 50s infinite;
+}
+
+.dog {
+	width: 150px;
+	height: 100px;
+	z-index: 3;
+	position: absolute;
+	transform: translate(-0px,200px);
+	animation: doganimation 20s infinite;
+}
+
+
+
+
+/*keyframes*/
+@keyframes beeanimation {
+	from {left: 0px}
+	to {left: 700px}
+
+    
+
+
+@keyframes doganimation {
+	0%{left: 200px; transform: rotate(0deg);}
+	25%{left: 400px; transform: rotate(360deg);}
+    50%{left: 600px; transform: rotate(45deg);}
+    80%{left: 800px; transform: rotate(360deg);}
+    100%{left: 1000px; transform: rotate(45deg);}
+    
